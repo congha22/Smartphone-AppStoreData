@@ -1,0 +1,28 @@
+name: Sync Google Sheet to GitHub Pages
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Adds a button so you can manually trigger it
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch CSV from Google Sheets
+            run: |
+              curl -L -o data.csv "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrSa8WPN27y_HycjbTTB9wiXsZgC-Wu8pMXd3yeFWItBorqio8-e46e4IDf8Vnq2frlQYJb1hYvGk5/pub?gid=0&single=true&output=csv"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.csv
+          # This line ensures it only commits if the data actually changed
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto-update CSV data" && git push)
