@@ -2,7 +2,7 @@ name: Sync Google Sheet to GitHub Pages
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
+    - cron: '0 */6 * * *' # Runs at minute 0 past every 6th hour
   workflow_dispatch: # Adds a button so you can manually trigger it
 
 jobs:
