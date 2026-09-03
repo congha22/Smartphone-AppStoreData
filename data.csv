@@ -1,11 +1,67 @@
-<!DOCTYPE html><html lang="en"><head><script nonce="WnL48vf5COOtTcUhFpDKCw">window['ppConfig'] = {productName: '26981ed0d57bbad37e728ff58134270c', deleteIsEnforced:  false , sealIsEnforced:  false , heartbeatRate:  0.5 , periodicReportingRateMillis:  60000.0 , disableAllReporting:  false };(function(){'use strict';function k(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function l(a){var b=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(b)return b.call(a);if(typeof a.length=="number")return{next:k(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var m=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
-function n(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var p=n(this);function q(a,b){if(b)a:{var c=p;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&m(c,a,{configurable:!0,writable:!0,value:b})}}
-q("Object.is",function(a){return a?a:function(b,c){return b===c?b!==0||1/b===1/c:b!==b&&c!==c}});q("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});
-q("String.prototype.includes",function(a){return a?a:function(b,c){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(b instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(b,c||0)!==-1}});function r(a,b,c){a("https://csp.withgoogle.com/csp/proto/"+encodeURIComponent(b),JSON.stringify(c))}function t(){var a;if((a=window.ppConfig)==null?0:a.disableAllReporting)return function(){};var b,c,d,e;return(e=(b=window)==null?void 0:(c=b.navigator)==null?void 0:(d=c.sendBeacon)==null?void 0:d.bind(navigator))!=null?e:u}function u(a,b){var c=new XMLHttpRequest;c.open("POST",a);c.send(b)}
-function v(){var a=(w=Object.prototype)==null?void 0:w.__lookupGetter__("__proto__"),b=x,c=y;return function(){var d=a.call(this),e,f,g,h;r(c,b,{type:"ACCESS_GET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}
-function z(){var a=(A=Object.prototype)==null?void 0:A.__lookupSetter__("__proto__"),b=x,c=y;return function(d){d=a.call(this,d);var e,f,g,h;r(c,b,{type:"ACCESS_SET",origin:(f=window.location.origin)!=null?f:"unknown",report:{className:(g=d==null?void 0:(e=d.constructor)==null?void 0:e.name)!=null?g:"unknown",stackTrace:(h=Error().stack)!=null?h:"unknown"}});return d}}function B(a,b){C(a.productName,b);setInterval(function(){C(a.productName,b)},a.periodicReportingRateMillis)}
-var D="constructor __defineGetter__ __defineSetter__ hasOwnProperty __lookupGetter__ __lookupSetter__ isPrototypeOf propertyIsEnumerable toString valueOf __proto__ toLocaleString x_ngfn_x".split(" "),E=D.concat,G=navigator.userAgent.match(/Firefox\/([0-9]+)\./),H=(!G||G.length<2?0:Number(G[1])<75)?["toSource"]:[],I;if(H instanceof Array)I=H;else{for(var J=l(H),K,L=[];!(K=J.next()).done;)L.push(K.value);I=L}var M=E.call(D,I),N=[];
-function C(a,b){var c=[],d=l(Object.getOwnPropertyNames(Object.prototype)),e=d.next(),f;try{for(;!e.done;e=d.next()){var g=e.value;M.includes(g)||N.includes(g)||c.push(g)}}finally{e&&!e.done&&(f=d.return)&&f.call(d)}e=Object.prototype;d=[];for(f=0;f<c.length;f++)g=c[f],d[f]={name:g,descriptor:Object.getOwnPropertyDescriptor(Object.prototype,g),type:typeof e[g]};if(d.length!==0){c=l(d);e=c.next();var h;try{for(;!e.done;e=c.next())N.push(e.value.name)}finally{e&&!e.done&&(h=c.return)&&h.call(c)}var F;
-r(b,a,{type:"SEAL",origin:(F=window.location.origin)!=null?F:"unknown",report:{blockers:d}})}};var O=Math.random(),P=t(),Q=window.ppConfig;Q&&(Q.disableAllReporting||Q.deleteIsEnforced&&Q.sealIsEnforced||O<Q.heartbeatRate&&r(P,Q.productName,{origin:window.location.origin,type:"HEARTBEAT"}));var y=t(),R=window.ppConfig;if(R)if(R.deleteIsEnforced)delete Object.prototype.__proto__;else if(!R.disableAllReporting){var x=R.productName;try{var w,A;Object.defineProperty(Object.prototype,"__proto__",{enumerable:!1,get:v(),set:z()})}catch(a){}}
-(function(){var a=t(),b=window.ppConfig;b&&(b.sealIsEnforced?Object.seal(Object.prototype):b.disableAllReporting||(document.readyState!=="loading"?B(b,a):document.addEventListener("DOMContentLoaded",function(){B(b,a)})))})();}).call(this);
-</script><meta name="description" content="Web word processing, presentations and spreadsheets"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"><link rel="shortcut icon" href="//docs.google.com/favicon.ico"><title>Page Not Found</title><meta name="referrer" content="origin"><link href="//fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css" nonce="ubp0Dh1PiP4nBvK369ZdqQ"><style nonce="ubp0Dh1PiP4nBvK369ZdqQ">#drive-logo{margin:18px 0;position:absolute;white-space:nowrap}.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_116x41dp.png);-webkit-background-size:116px 41px;background-size:116px 41px;display:inline-block;height:41px;vertical-align:bottom;width:116px}.docs-drivelogo-text{color:var(--gm3-sys-color-on-surface,#1f1f1f);display:inline-block;opacity:.54;text-decoration:none;font-family:Product Sans,Arial,Helvetica,sans-serif;font-size:2rem;text-rendering:optimizeLegibility;position:relative;top:-6px;left:-7px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi){.docs-drivelogo-img{background-image:url(//ssl.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_116x41dp.png)}}.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block{display:inline}:first-child+html .goog-inline-block{display:inline}sentinel{}</style><style type="text/css" nonce="ubp0Dh1PiP4nBvK369ZdqQ">body {background-color: #fff; font-family: Arial,sans-serif; font-size: 13px; margin: 0; padding: 0;}a, a:link, a:visited {color: #112ABB;}</style><style type="text/css" nonce="ubp0Dh1PiP4nBvK369ZdqQ">.errorMessage {font-size: 12pt; font-weight: bold; line-height: 150%;}</style></head><body><div id="outerContainer"><div id="innerContainer"><div style="position: absolute; top: -80px;"><div style="margin: 18px 0; position: absolute; white-space: nowrap;"><a href="//support.google.com/docs/"><img height="35px" src="//ssl.gstatic.com/docs/common/product/spreadsheets_lockup3.png" alt="Google logo"/></a></div></div><div align="center"><p class="errorMessage" style="padding-top: 50px">Sorry, unable to open the file at this time.</p><p> Please check the address and try again. </p><div style="background: #F0F6FF; border: 1px solid black; margin-top: 35px; padding: 10px 125px; width: 300px;"><p><strong>Get stuff done with Google Drive</strong></p><p>Apps in Google Drive make it easy to create, store and share online documents, spreadsheets, presentations and more.</p><p>Learn more at <a href="https://drive.google.com/start/apps">drive.google.com/start/apps</a>.</p></div></div></div></div></body><style nonce="ubp0Dh1PiP4nBvK369ZdqQ">html {height: 100%; overflow: auto;}body {height: 100%; overflow: auto;}#outerContainer {margin: auto; max-width: 750px;}#innerContainer {margin-bottom: 20px; margin-left: 40px; margin-right: 40px; margin-top: 80px; position: relative;}</style></html>
+Unique ID,UpdateKey,Name,Author,ModURL,IconURL,ModType,ShortDescription,FullDescription,PublishedAt,TotalEndorsement,LatestVersion,Timestamp
+47626,Nexus:47626,Casino Blackjack,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/47626,https://staticdelivery.nexusmods.com/mods/1303/images/47626/47626-1781390622-1316440115.png,App,Add casino blackjack game,Add casino blackjack game.,2026-06-13T22:55:40.000+00:00,14,1.1,
+47513,Nexus:47513,Casino Roulette,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/47513,https://staticdelivery.nexusmods.com/mods/1303/images/47513/47513-1781391077-709092922.png,App,Add mini game Roulette,"[center][b]Casino Roulette[/b][/center]
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/47513/47513-1781391077-709092922.png[/img]",2026-06-12T10:39:20.000+00:00,14,1.1,
+47892,Nexus:47892,Casino Chuck-A-Luck,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/47892,https://staticdelivery.nexusmods.com/mods/1303/images/47892/47892-1781911379-1101906155.png,App,Add minigame Chuck-A-Luck,"[center][b]Casino Chuck-A-Luck[/b][/center]
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/47892/47892-1781911379-1101906155.png[/img]",2026-06-19T23:30:11.000+00:00,8,1.1,
+46250,Nexus:46250,Arcade games,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/46250,https://staticdelivery.nexusmods.com/mods/1303/images/46250/46250-1779144192-1396704531.png,App,Add stardew valley arcade games,"[center][b]Arcade games[/b][/center]
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/46250/46250-1779144192-1396704531.png[/img]",2026-06-02T06:11:33.000+00:00,19,1.3,
+48347,Nexus:48347,Messenger,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/48347,https://staticdelivery.nexusmods.com/mods/1303/images/48347/48347-1782979825-950354201.png,App,Messenger app - texting with NPCs,"[center][b]Messenger[/b][/center]
+
+Let you texting with townfolks. You can even share photos with them.
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/48347/48347-1782980918-689008884.png[/img]
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/48347/48347-1782980770-631619559.png[/img]",2026-07-02T23:11:59.000+00:00,74,1.7,
+48348,Nexus:48348,Stardew Social,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/48348,https://staticdelivery.nexusmods.com/mods/1303/images/48348/48348-1782979923-632255812.png,App,A social media platform where you and the townfolks can share about anything.,"[center][b]Stardew Social[/b][/center]
+
+A social media platform where you and the townfolks can share about anything.
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/48348/48348-1782981457-810952102.png[/img]
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/48348/48348-1782981463-1304085797.png[/img]",2026-07-02T23:12:11.000+00:00,62,1.4,
+48563,Nexus:48563,Flippy Bird,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/48563,https://staticdelivery.nexusmods.com/mods/1303/images/48563/48563-1783034394-2102151471.png,App,Add mini game Flippy Bird,"[center][b]Flippy Bird[/b][/center]
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/48563/48563-1783034477-999205077.png[/img]",2026-07-02T23:20:31.000+00:00,10,1.0,
+49000,Nexus:49000,Delivery Service,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/49000,https://staticdelivery.nexusmods.com/mods/1303/images/49000/49000-1784454527-1873609772.png,App,Purchase from any shops online and get them delivered to your door step!,"[center][b]Delivery Service[/b][/center]
+[center]Tired of running all the way across town just to buy seeds?[/center]
+[center]Delivery Service brings the convenience of online shopping right to your virtual pocket![/center]
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/49000/49000-1784456288-853542877.png[/img]
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/49000/49000-1784454545-296752614.png[/img]",2026-07-20T02:06:02.000+00:00,61,1.2,
+50250,Nexus:50250,Live Camera,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/50250,https://staticdelivery.nexusmods.com/mods/1303/images/50250/50250-1786345316-1913553005.png,App,"Fully functional CCTV camera system, allowing you to see what's going on everywhere.","[center][b]Live Camera[/b][/center]
+
+Fully functional CCTV camera system, allowing you to see what's going on everywhere.
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/50250/50250-1786344810-785525070.png[/img]
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/50250/50250-1786345130-1086699556.png[/img]",2026-08-17T03:50:30.000+00:00,22,1.1,
+51143,Nexus:51143,AirDrop,d5a1lamdtd,https://www.nexusmods.com/stardewvalley/mods/51143,https://staticdelivery.nexusmods.com/mods/1303/images/51143/51143-1787454026-1685360953.png,App,"Let you send items from inventory back home or to a friend, and retrieve items from any chest.","[center][b]AirDrop[/b][/center]
+
+Let you send items from inventory back home or to a friend, and retrieve items from any chest.
+
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/51143/51143-1787451610-946159258.png[/img]
+[img]https://staticdelivery.nexusmods.com/mods/1303/images/51143/51143-1787451611-407863993.png[/img]",2026-08-23T03:08:41.000+00:00,17,1,
+50878,Nexus:50878,Pelican Valley Bank,SourceNineLabs,https://www.nexusmods.com/stardewvalley/mods/50878,https://i.ibb.co/KjSrhTkL/Untitled-design-1.png,App,"A lore-friendly banking system with deposits, withdrawals, interest, and account history.","[center][b]Pelican Valley Bank[/b][/center]
+
+Pelican Valley Bank adds a lore-friendly banking system to Stardew Valley.
+
+Open your own farm bank account, move gold between your farm wallet and account, earn seasonal interest on eligible savings, and keep track of your banking history through a detailed account ledger.
+
+Features include:
+
+• An in-world account application and approval process
+• Deposits and withdrawals
+• Separate bank and farm wallet balances
+• Seasonal interest on eligible savings
+• Permanent account numbers
+• Transaction history and account ledger
+• Configurable interest settings
+• Multiplayer support
+• Optional Smartphone integration
+
+With Smartphone installed, Pelican Valley Bank can be accessed directly from your phone through its own app.
+
+Smartphone is optional. Pelican Valley Bank continues to work normally without it.
+
+[b]Requires SMAPI 4.0 or later.[/b]",2026-08-23T01:13:42.000+00:00,15,0.4.1-beta,
